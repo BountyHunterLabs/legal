@@ -3,46 +3,321 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bounty Hunter Bot - Legal Documents</title>
+    <title>Neko Syndicate - Supreme Economy Architecture & Legal Documents</title>
     <style>
-        :root { --bg: #0f1115; --card: #171a21; --text: #dcddde; --accent: #f1c40f; }
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: var(--bg); color: var(--text); line-height: 1.6; max-width: 850px; margin: 40px auto; padding: 0 20px; }
-        .card { background-color: var(--card); padding: 40px; border-radius: 12px; box-shadow: 0 8px 16px rgba(0,0,0,0.3); border: 1px solid #2f333c; }
-        h1 { color: var(--accent); text-align: center; font-size: 2em; margin-bottom: 5px; }
-        h2 { color: var(--accent); border-bottom: 1px solid #2f333c; padding-bottom: 10px; margin-top: 35px; font-size: 1.4em; }
-        code { background: #2f333c; padding: 2px 6px; border-radius: 4px; font-family: monospace; color: #f1c40f; }
-        .date { text-align: center; color: #8e9297; font-style: italic; margin-bottom: 40px; font-size: 0.9em; }
-        .footer { margin-top: 50px; padding-top: 20px; border-top: 1px solid #2f333c; text-align: center; color: #8e9297; }
-        .contact-box { background: #23272e; padding: 20px; border-radius: 8px; margin-top: 20px; color: #fff; border: 1px dashed var(--accent); }
+        :root { 
+            --bg: #090c10; 
+            --card: #0d1117; 
+            --text: #c9d1d9; 
+            --accent: #38bdf8; /* Neon Blue */
+            --accent-hover: #0284c7;
+            --danger: #f85149; 
+            --success: #2ea043;
+            --border: #1e293b;
+            --embed-bg: #161b22;
+        }
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; 
+            background-color: var(--bg); 
+            color: var(--text); 
+            line-height: 1.6; 
+            max-width: 950px; 
+            margin: 40px auto; 
+            padding: 0 20px; 
+        }
+        .card { 
+            background-color: var(--card); 
+            padding: 45px; 
+            border-radius: 14px; 
+            box-shadow: 0 12px 30px rgba(0, 168, 255, 0.05); 
+            border: 1px solid var(--border); 
+        }
+        h1 { 
+            color: var(--accent); 
+            text-align: center; 
+            font-size: 2.4em; 
+            margin-bottom: 5px; 
+            text-transform: uppercase; 
+            letter-spacing: 2px; 
+            text-shadow: 0 0 10px rgba(56, 189, 248, 0.3);
+        }
+        h2 { 
+            color: var(--accent); 
+            border-bottom: 1px solid var(--border); 
+            padding-bottom: 10px; 
+            margin-top: 50px; 
+            font-size: 1.5em; 
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        h3 { 
+            color: #ffffff; 
+            margin-top: 25px; 
+            font-size: 1.2em; 
+        }
+        code { 
+            background: rgba(56, 189, 248, 0.1); 
+            padding: 3px 8px; 
+            border-radius: 6px; 
+            font-family: 'Courier New', Courier, monospace; 
+            color: var(--accent); 
+            font-weight: 600; 
+            border: 1px solid rgba(56, 189, 248, 0.2);
+        }
+        .date { 
+            text-align: center; 
+            color: #8b949e; 
+            font-style: italic; 
+            margin-bottom: 40px; 
+            font-size: 0.95em; 
+        }
+        .discord-embed {
+            background: var(--embed-bg);
+            border-left: 4px solid var(--accent);
+            padding: 20px;
+            border-radius: 4px;
+            margin: 20px 0;
+            font-family: 'Courier New', Courier, monospace;
+            color: #8b949e;
+            white-space: pre-wrap;
+            font-size: 0.9em;
+            line-height: 1.5;
+            box-shadow: inset 0 0 10px rgba(0,0,0,0.2);
+        }
+        .discord-embed .highlight {
+            color: var(--text);
+            font-weight: bold;
+        }
+        .discord-embed .accent-text {
+            color: var(--accent);
+        }
+        .alert-box { 
+            background: rgba(248, 81, 73, 0.05); 
+            border-left: 4px solid var(--danger); 
+            padding: 16px 20px; 
+            margin: 20px 0; 
+            border-radius: 4px; 
+        }
+        .info-box {
+            background: rgba(46, 160, 67, 0.05); 
+            border-left: 4px solid var(--success); 
+            padding: 16px 20px; 
+            margin: 20px 0; 
+            border-radius: 4px; 
+        }
+        ul { 
+            list-style-type: none; 
+            padding-left: 0; 
+        }
+        li { 
+            margin-bottom: 12px; 
+            padding-left: 20px;
+            position: relative;
+        }
+        li::before {
+            content: "✦";
+            color: var(--accent);
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        .command-desc { 
+            color: #8b949e; 
+            display: block;
+            margin-top: 4px;
+            padding-left: 5px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid var(--border);
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: var(--embed-bg);
+            color: var(--accent);
+        }
+        .footer { 
+            margin-top: 60px; 
+            padding-top: 25px; 
+            border-top: 1px solid var(--border); 
+            text-align: center; 
+            color: #8b949e; 
+            font-size: 0.9em;
+        }
+        .contact-box { 
+            background: var(--embed-bg); 
+            padding: 20px; 
+            border-radius: 8px; 
+            margin-top: 20px; 
+            color: #fff; 
+            border: 1px dashed var(--accent); 
+        }
         a { color: var(--accent); text-decoration: none; }
-        a:hover { text-decoration: underline; }
+        a:hover { text-decoration: underline; color: var(--accent-hover); }
     </style>
 </head>
 <body>
     <div class="card">
-        <h1>🏹 Bounty Hunter Bot: Terms of Service & Privacy Policy</h1>
-        <div class="date">Last Edited: February 16, 2026</div>
+        <h1>🐾 Neko Syndicate</h1>
+        <div class="date">Supreme Economy Architecture | Official Guidelines & Legal Protocols</div>
 
-        <h2>🛡️ 1. Minimal Data Collection (Zero Personal Data)</h2>
+        <h2>💻 1. Core Terminal Commands</h2>
+        <p>Utilize these foundational commands to navigate the Syndicate's economy and track your financial trajectory:</p>
+        <ul>
+            <li><code>/nd balance</code> 
+                <span class="command-desc">Displays your real-time game balance and active account statistics.</span>
+            </li>
+            <li><code>/nb global</code> 
+                <span class="command-desc">Accesses the global leaderboard, ranking all players across the entire Neko Syndicate network.</span>
+            </li>
+            <li><code>/nd top10</code> 
+                <span class="command-desc">Displays the local leaderboard, ranking the top players exclusively within your current server.</span>
+            </li>
+            <li><code>/nd daily</code> 
+                <span class="command-desc">Claims your standard daily reward. Resets exactly every 24 hours.</span>
+            </li>
+            <li><code>/nd vote</code> 
+                <span class="command-desc">Vote on our terminal every 24 hours to support the Syndicate and receive a financial stimulus.</span>
+            </li>
+        </ul>
+
+        <h2>📜 2. PvE Game Mode: Jury Summons (Syndicate Contracts)</h2>
+        <p>The PvE mode allows you to lease a high-yield contract from the Syndicate. The community acts as the Intergalactic Neko Jury to validate your proof of work.</p>
+        
+        <div class="discord-embed">
+<span class="highlight">JURY SUMMONS:</span> <span class="accent-text">@Agent</span> has submitted proof, nya!
+
+EVIDENCE SUBMITTED (PvE)
+The Intergalactic Neko Jury must verify the proof!
+
+<span class="highlight">CONTRACT DETAILS</span>
+• Stake: 500 coins
+• Multiplier: x5
+• Payout Scale: 100%
+
+<span class="highlight">PAYOUT STRUCTURE</span>
+• Agent Net Payout: 2,300 coins
+• Jury Payout Pool: 200 coins (10% of profit)
+
+<span class="highlight">JURY REQUIREMENT</span>
+• Needs: 6 votes
+
+NEKO JURY: VOTE 👍 TO VALIDATE | ❌ TO BUST
+        </div>
+
+        <h3>Contract Mechanics & Voting Requirements</h3>
+        <p>To initiate a contract, you must stake a minimum of <strong>500 credits</strong>. You choose a multiplier ranging from <strong>x5 to x100</strong>. The chosen multiplier directly dictates the number of community reactions required.</p>
+        <ul>
+            <li><strong>The Formula:</strong> Required Votes = Multiplier + 1.</li>
+            <li><em>Note:</em> The bot's automated reaction and the contract initiator's reaction do <strong>not</strong> count toward the total. Therefore, an x5 multiplier requires exactly 6 valid community votes to pass.</li>
+        </ul>
+
+        <h3>Time Limits vs. Payout Scaling</h3>
+        <p>When creating a contract, you must select a time limit. Longer durations make it easier to gather the required votes, but they heavily penalize your final payout percentage. If your contract is validated, <strong>10% of the profit is distributed equally among the jurors who voted.</strong></p>
+        
+        <table>
+            <tr><th>Time Limit</th><th>Payout Reward</th></tr>
+            <tr><td>30 Minutes</td><td>100% of chosen multiplier</td></tr>
+            <tr><td>1 Hour</td><td>50% of chosen multiplier</td></tr>
+            <tr><td>3 Hours</td><td>16% of chosen multiplier</td></tr>
+            <tr><td>6 Hours</td><td>8% of chosen multiplier</td></tr>
+            <tr><td>12 Hours</td><td>4% of chosen multiplier</td></tr>
+            <tr><td>24 Hours</td><td>2% of chosen multiplier</td></tr>
+        </table>
+
+        <div class="alert-box">
+            <strong>⚠️ ANTI-FRAUD PROTOCOL (Bust Penalty):</strong> To prevent abuse, Discord accounts under 30 days old cannot initiate or vote on PvE contracts. If the community determines your contract is spam/fake and casts more ❌ (Bust) votes than 👍 (Validate), you will be heavily penalized. Your balance will be slashed by the exact amount of your initial stake multiplied by your chosen multiplier.
+        </div>
+
+        <h2>⚔️ 3. PvP Game Mode: Neko Heist (Targeted Strikes)</h2>
+        <p>Initiate a direct assault on another Syndicate member's vault. Select your target via their ID and choose your multiplier/duration tier.</p>
+
+        <div class="discord-embed">
+<span class="danger">CRITICAL ALERT: INCOMING NEKO HEIST (PvP)</span>
+The Neko Syndicate has marked a high-value target for extraction! 
+TARGET: <span class="accent-text">@Mark</span> | ATTACKER: <span class="accent-text">@Hunter</span>
+
+<span class="highlight">ATTACK DOSSIER</span>
+• Stake: 500 coins | Multiplier: x5 | Required: 5 votes
+
+<span class="highlight">DEFENSE PROTOCOL</span>
+• Vault Target: 2,500 coins | Required: 5 votes
+
+<span class="highlight">TIME TO EXTRACTION</span>
+Duration: 10 minutes
+
+NEKO JURY: VOTE ⚔️ TO ASSIST | 🛡️ TO INTERCEPT
+        </div>
+
+        <h3>PvP Multiplier & Time Matrix</h3>
+        <ul>
+            <li><strong>x5 Multiplier:</strong> Requires 5 votes within <strong>10 minutes</strong>.</li>
+            <li><strong>x10 Multiplier:</strong> Requires 10 votes within <strong>30 minutes</strong>.</li>
+            <li><strong>x25 Multiplier:</strong> Requires 25 votes within <strong>1 hour</strong>.</li>
+            <li><strong>x50 Multiplier:</strong> Requires 50 votes within <strong>3 hours</strong>.</li>
+            <li><strong>x100 Multiplier:</strong> Requires 100 votes within <strong>6 hours</strong>.</li>
+        </ul>
+
+        <h3>Rules of Engagement (Payout Logic)</h3>
+        <p>In every Neko Heist, <strong>10% of the stakes are split equally</strong> among all hired guns (voters). The outcome of the heist is decided as follows:</p>
+        <ul>
+            <li><strong>LETHAL (Hit required ⚔️):</strong> The Hunter successfully gathers the required attack votes. The Hunter loots the FULL bounty!</li>
+            <li><strong>GUERRILLA (Time out with ⚔️ majority):</strong> Time expires before the required votes are hit, but Attack votes outnumber Defense votes. The Hunter extracts 20% of the Mark's ENTIRE stash.</li>
+            <li><strong>INTERCEPTED (Tie or hit required 🛡️):</strong> Defense votes meet the requirement, or the vote ends in a tie. The Mark SURVIVES and strictly CONFISCATES the Hunter's initial bet!</li>
+        </ul>
+
+        <h2>🎁 4. Syndicate Utility Commands (/ns)</h2>
+        
+        <h3><code>/ns giveaway</code></h3>
+        <p>Host a community giveaway funded by the Syndicate's taxation system.</p>
+        <ul>
+            <li><strong>Amount:</strong> Minimum 500 credits.</li>
+            <li><strong>Duration:</strong> Must be entered in strict <em>seconds</em>. (e.g., 60 = 1 min, 300 = 5 mins, 600 = 10 mins, 1800 = 30 mins, 3600 = 1 hour, 86400 = 24 hours). <em>Tip: Use an online minutes-to-seconds converter for custom times.</em></li>
+            <li><strong>Reactions:</strong> Minimum number of participants required to trigger the payout (min 1).</li>
+            <li><strong>Message:</strong> Custom text describing what you are giving away.</li>
+        </ul>
+        <div class="info-box">
+            <strong>Taxation Mechanic:</strong> To fund the giveaway, random server members will be incrementally taxed between 2% and 10% of their balance until the giveaway amount is reached. To prevent abuse, giveaways shorter than 5 minutes have a strict cap of <strong>2,500 coins</strong>.
+        </div>
+
+        <h3><code>/ns stats</code> & <code>/ns invite</code></h3>
+        <ul>
+            <li><code>/ns stats</code>: Displays the total number of members across all servers and the total active server count hosting the bot.</li>
+            <li><code>/ns invite</code>: Generates the bot invite link. If you invite the bot to a server where you have "Manage Server" permissions, follow up with <code>/ns claim</code> to receive a <strong>100,000 coin bounty</strong>. 
+            <br><em>Condition: The server must have at least 5 real human members. If the bot is ever kicked from that server, the 100,000 coins will be automatically subtracted from your balance.</em></li>
+        </ul>
+
+        <h3><code>/ns advertise</code></h3>
+        <p>Purchase a dedicated advertising slot on the main Neko Syndicate support server. By spending your credits, your advertisement will be broadcasted to an exclusive ad channel for <strong>6 hours</strong>. During this window, all other channel inputs are locked, ensuring maximum visibility for your ad.</p>
+        <p><em>Rule: We accept Discord server ads and general promotions. However, promoting illegal content, scams, or phishing links will result in a permanent, irrevocable ban from the Syndicate economy.</em></p>
+
+        <h2>🛡️ 5. Minimal Data Collection (Zero Personal Data)</h2>
         <p>We strictly collect ONLY your numeric Discord User ID and Server ID to manage your virtual balance, stats, and active bounties. We DO NOT collect, store, track, or process your username, avatar, email, or any personal information.</p>
 
-        <h2>👁️‍🗨️ 2. Why We Collect It & The "Blind Leaderboard" Privacy Feature</h2>
-        <p>This basic numeric data is required to track your progress, wins/losses, and rank on the global leaderboard. Because we strictly refuse to save your username, players from other servers will only see your identity as "@Unknown User" when using the <code>/bh global</code> command. Your real identity is 100% protected and naturally hidden by Discord, being visible only to users who already share a server with you.</p>
+        <h2>👁️‍🗨️ 6. The "Blind Leaderboard" Privacy Feature</h2>
+        <p>This basic numeric data is required to track your progress, wins/losses, and rank on the global leaderboard. Because we strictly refuse to save your username, players from other servers will only see your identity as "@Unknown User" when using the <code>/nb global</code> command. Your real identity is 100% protected and naturally hidden by Discord, being visible only to users who already share a server with you.</p>
 
-        <h2>🤝 3. Third Parties & Security</h2>
-        <p>We do not sell, rent, or share your data with any third parties. All data stays securely within our private database and is used exclusively for the bot's internal economy mechanics.</p>
+        <h2>🤝 7. Third Parties & Data Deletion</h2>
+        <p>We do not sell, rent, or share your data with any third parties. All data stays securely within our private database. Because we don't store personal data, your presence in our database is virtually anonymous outside of your shared servers. However, if you want your numeric data completely wiped, please contact the developer via email or use the <code>/nd cancel</code> command to clear any active tasks.</p>
 
-        <h2>🗑️ 4. Data Deletion & Control</h2>
-        <p>Because we don't store personal data, your presence in our database is virtually anonymous outside of your shared servers. However, if you want your numeric data completely wiped, please contact the developer via email or use the <code>/bh cancel</code> command to clear any active tasks.</p>
-
-        <h2>📜 Terms of Service (Rules of the Hunt)</h2>
-        <p>By using Bounty Hunter, you agree to play fair. Exploiting bugs, using macro scripts/auto-clickers, or manipulating the voting system with fake accounts is strictly prohibited. We reserve the right to reset balances or blacklist users who attempt to break the economy.</p>
+        <h2>⚖️ 8. Terms of Service: Rules of the Syndicate</h2>
+        <p>By operating within the Neko Syndicate, you agree to the following High Stakes Economy protocols:</p>
+        <ul>
+            <li><strong>Multi-Accounting & Fair Play:</strong> Playing with multiple accounts is permitted, but exploiting bugs, using macro scripts/auto-clickers, or manipulating the voting system with fake accounts is strictly prohibited. All game calculations have been thoroughly addressed.</li>
+            <li><strong>Private Channels:</strong> If you attempt to manipulate the system by farming infinite credits in isolated, private channels, note that no one will accept your heavily inflated currency.</li>
+            <li><strong>Administrative Supremacy:</strong> Under certain conditions, we reserve the absolute right to permanently reset the global leaderboard and alter any economic functions, formulas, or mechanics at any time, without prior warning.</li>
+        </ul>
 
         <div class="footer">
-            <p><strong>Bounty Hunter — High Stakes Economy. Play Safe. 2026</strong></p>
+            <p><strong>Neko Syndicate — Supreme High Stakes Economy. Execute Flawlessly. 2026</strong></p>
             <div class="contact-box">
-                <p><strong>Contact Information</strong><br>
-                For data deletion requests or support, contact us at:<br>
+                <p><strong>Contact & Support Protocol</strong><br>
+                For data deletion requests, bug reports, or Syndicate support, contact us at:<br>
                 <strong><a href="mailto:eudatecloud@gmail.com">eudatecloud@gmail.com</a></strong></p>
                 <p><small>Note: Please allow up to 72 hours for a response regarding data deletion requests.</small></p>
             </div>
