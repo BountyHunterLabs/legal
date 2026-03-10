@@ -5,17 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Neko Syndicate - Supreme Economy Architecture & Legal Documents</title>
     <meta property="og:type" content="website">
-<meta property="og:url" content="https://bountyhunterlabs.github.io/legal/">
-<meta property="og:title" content="🐾 NS | Supreme Economy Architecture | Discord Bot">
-<meta property="og:description" content="Best PvP & PvE & PVM games on server! Type /nd /np /ns to open the main menu. Stop slacking. Start hunting. The ultimate high-stakes economy & social bot where the community is the jury! 💰 A Revolutionary Vote-Based Economy | ⚔️ The Ultimate PvE & PvP Experience">
-<meta property="og:image" content="https://i.postimg.cc/2SYwryNx/slacking.jpg">
-<meta name="theme-color" content="#38bdf8">
+    <meta property="og:url" content="https://bountyhunterlabs.github.io/legal/">
+    <meta property="og:title" content="🐾 NS | Supreme Economy Architecture | Discord Bot">
+    <meta property="og:description" content="Best PvP & PvE & PVM games on server! Type /nd /np /ns to open the main menu. Stop slacking. Start hunting. The ultimate high-stakes economy & social bot where the community is the jury! 💰 A Revolutionary Vote-Based Economy | ⚔️ The Ultimate PvE & PvP Experience">
+    <meta property="og:image" content="https://i.postimg.cc/2SYwryNx/slacking.jpg">
+    <meta name="theme-color" content="#38bdf8">
 
-<meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:url" content="https://bountyhunterlabs.github.io/legal/">
-<meta property="twitter:title" content="🐾 NS | Supreme Economy | Discord Bot">
-<meta property="twitter:description" content="Best PvP & PvE games on server! Type /nd /np /ns to open the main menu. Stop slacking. Start hunting. The ultimate high-stakes economy & social bot where the community is the jury!">
-<meta property="twitter:image" content="https://i.postimg.cc/2SYwryNx/slacking.jpg">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://bountyhunterlabs.github.io/legal/">
+    <meta property="twitter:title" content="🐾 NS | Supreme Economy | Discord Bot">
+    <meta property="twitter:description" content="Best PvP & PvE games on server! Type /nd /np /ns to open the main menu. Stop slacking. Start hunting. The ultimate high-stakes economy & social bot where the community is the jury!">
+    <meta property="twitter:image" content="https://i.postimg.cc/2SYwryNx/slacking.jpg">
     <style>
         :root { 
             --bg: #090c10; 
@@ -25,6 +25,7 @@
             --accent-hover: #0284c7;
             --danger: #f85149; 
             --success: #2ea043;
+            --warning: #f8a900; /* Dev Status Yellow/Orange */
             --border: #1e293b;
             --embed-bg: #161b22;
         }
@@ -80,9 +81,63 @@
             text-align: center; 
             color: #8b949e; 
             font-style: italic; 
-            margin-bottom: 40px; 
+            margin-bottom: 30px; 
             font-size: 0.95em; 
         }
+        
+        /* DEV STATUS WIDGET */
+        .dev-status-box {
+            background: rgba(248, 169, 0, 0.05);
+            border: 1px solid rgba(248, 169, 0, 0.2);
+            border-left: 4px solid var(--warning);
+            padding: 20px 25px;
+            margin: 0 0 40px 0;
+            border-radius: 6px;
+            font-family: 'Courier New', Courier, monospace;
+            box-shadow: 0 4px 15px rgba(248, 169, 0, 0.05);
+        }
+        .dev-status-header {
+            color: var(--warning);
+            font-weight: bold;
+            font-size: 1.15em;
+            margin-bottom: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            display: flex;
+            align-items: center;
+        }
+        .status-indicator {
+            height: 10px;
+            width: 10px;
+            background-color: var(--warning);
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 12px;
+            box-shadow: 0 0 10px var(--warning);
+            animation: pulse 1.5s infinite;
+        }
+        @keyframes pulse {
+            0% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.4; transform: scale(0.9); }
+            100% { opacity: 1; transform: scale(1); }
+        }
+        .dev-status-text {
+            color: #b1bac4;
+            margin: 0;
+            line-height: 1.5;
+        }
+        .dev-status-highlight {
+            color: #e6edf3;
+            font-weight: 600;
+        }
+        .dev-status-footer {
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px dashed rgba(248, 169, 0, 0.2);
+            font-size: 0.9em;
+            color: #8b949e;
+        }
+
         .discord-embed {
             background: var(--embed-bg);
             border-left: 4px solid var(--accent);
@@ -178,21 +233,35 @@
         <h1>🐾 Neko Syndicate</h1>
         <div class="date">Supreme Economy Architecture | Official Guidelines & Legal Protocols</div>
 
-<h2>💻 1. Core Terminal Commands</h2>
+        <div class="dev-status-box">
+            <div class="dev-status-header">
+                <span class="status-indicator"></span> CURRENT STATUS: ACTIVE EVOLUTION
+            </div>
+            <p class="dev-status-text">
+                <span class="dev-status-highlight">NOTICE:</span> In the coming weeks and months, we will be upgrading the entire game engine and all commands to meet your highest expectations.
+            </p>
+            <p class="dev-status-text" style="margin-top: 10px;">
+                <span style="color: var(--warning);">+</span> PvP, PvE, and PvM modules are currently being refactored into high-performance UI Buttons for a flawless experience.
+            </p>
+            <div class="dev-status-footer">
+                To stay up to date, please read our internal documentation.
+            </div>
+        </div>
+        <h2>💻 1. Core Terminal Commands</h2>
         <p>Utilize these foundational commands to navigate the Syndicate's economy and track your financial trajectory:</p>
         
         <div style="margin-bottom: 25px; background: rgba(56, 189, 248, 0.05); padding: 15px; border-radius: 8px; border: 1px dashed var(--accent); text-align: center;">
             <span style="color: var(--text); font-weight: bold; margin-right: 10px;">🚀 Ready to deploy?</span>
             <a href="https://discord.com/oauth2/authorize?client_id=1465301204341882940&permissions=139586784320&scope=bot%20applications.commands" 
                style="background: var(--accent); color: #000; padding: 8px 18px; border-radius: 5px; font-weight: bold; text-transform: uppercase; font-size: 0.85em; transition: 0.3s; display: inline-block;">
-               Invite Bot Here
+                Invite Bot Here
             </a>
         </div>
         <div style="margin-bottom: 25px; background: rgba(56, 189, 248, 0.05); padding: 15px; border-radius: 8px; border: 1px dashed var(--accent); text-align: center;">
             <span style="color: var(--text); font-weight: bold; margin-right: 10px;">💬 Need help or want to join the community?</span>
             <a href="http://discord.gg/sxnJGQApGa" 
                style="background: var(--accent); color: #000; padding: 8px 18px; border-radius: 5px; font-weight: bold; text-transform: uppercase; font-size: 0.85em; transition: 0.3s; display: inline-block;">
-               Join Support Server
+                Join Support Server
             </a>
         </div>
         <ul>
@@ -212,7 +281,7 @@
                 <span class="command-desc">Vote on our terminal every 24 hours to support the Syndicate and receive a financial stimulus.</span>
             </li>
         </ul>
-
+        
         <h2>📜 2. PvE Game Mode: Jury Summons (Syndicate Contracts)</h2>
         <p>The PvE mode allows you to lease a high-yield contract from the Syndicate. The community acts as the Intergalactic Neko Jury to validate your proof of work.</p>
         
