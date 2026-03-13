@@ -239,31 +239,18 @@
         </div>
         
         <p class="dev-status-text">
-            <span class="dev-status-highlight">NOTICE:</span> In the coming weeks and months, we will be upgrading the entire game engine and all commands to meet your highest expectations.
+            <span class="dev-status-highlight">NOTICE:</span> The Neko Syndicate engine has been upgraded. We have officially transitioned from legacy text reactions to high-performance, interactive UI Buttons.
         </p>
         
         <p class="dev-status-text" style="margin-top: 10px;">
-            <span style="color: var(--warning);">+</span> PvP, PvE, and PvM modules are currently being refactored into high-performance UI Buttons for a flawless experience.
+            <span style="color: var(--warning);">+</span> PvP and PvE modules now feature embedded secure Discord UI Buttons (e.g., [👍 Validate] / [❌ Bust]) for instantaneous and exploit-proof voting.
         </p>
 
-        <div class="dev-contact-section" style="margin-top: 15px; padding-top: 15px; border-top: 1px solid var(--border-color);">
-            <span class="contact-title" style="font-size: 0.75em; color: var(--highlight); text-transform: uppercase; display: block; margin-bottom: 10px;">Interested in contributing?</span>
-            
-            <div style="display: flex; flex-direction: column; gap: 8px;">
-                <a href="#" class="contact-link" style="text-decoration: none; color: var(--text-main); font-family: monospace; display: flex; align-items: center;">
-                    <span style="color: #7289da; margin-right: 8px;">●</span> Discord: <span style="color: #fff; margin-left: 5px;">cristi1829</span>
-                </a>
-                <a href="mailto:doublecrissmary@gmail.com" class="contact-link" style="text-decoration: none; color: var(--text-main); font-family: monospace; display: flex; align-items: center;">
-                    <span style="color: #f44336; margin-right: 8px;">@</span> Email: <span style="color: #fff; margin-left: 5px;">doublecrissmary@gmail.com</span>
-                </a>
-            </div>
-        </div>
-
-        <div class="dev-status-footer" style="margin-top: 15px; font-size: 0.8em; color: #8b949e; font-style: italic;">
-            To stay up to date, please read our internal documentation.
+        <div class="dev-status-footer">
+            Welcome to the new era of the Syndicate. Read the documentation below to master the new protocols.
         </div>
     </div>
-</div>
+
         <h2>💻 1. Core Terminal Commands</h2>
         <p>Utilize these foundational commands to navigate the Syndicate's economy and track your financial trajectory:</p>
         
@@ -283,24 +270,42 @@
         </div>
         <ul>
             <li><code>/nd balance</code> 
-                <span class="command-desc">Displays your real-time game balance and active account statistics.</span>
+                <span class="command-desc">Inspect your global Neko vault, balance, and PvP/PvE stats.</span>
             </li>
-            <li><code>/nb global</code> 
-                <span class="command-desc">Accesses the global leaderboard, ranking all players across the entire Neko Syndicate network.</span>
+            <li><code>/nd rank</code> 
+                <span class="command-desc">Check your official Syndicate Rank and track your progression to the next tier.</span>
             </li>
-            <li><code>/nd top10</code> 
-                <span class="command-desc">Displays the local leaderboard, ranking the top players exclusively within your current server.</span>
+            <li><code>/nd name</code> 
+                <span class="command-desc">Forge a custom global alias for the intergalactic leaderboards (Cost: 100,000 coins).</span>
             </li>
             <li><code>/nd daily</code> 
-                <span class="command-desc">Claims your standard daily reward. Resets exactly every 24 hours.</span>
+                <span class="command-desc">Claim your daily 10,000 Coins. Boost this by claiming territory!</span>
+            </li>
+            <li><code>/nd claim_node</code> & <code>/nd unclaim_node</code>
+                <span class="command-desc">Link a server to your network to boost your daily yield by +5,000 Coins per active node.</span>
+            </li>
+            <li><code>/nd network</code> 
+                <span class="command-desc">View active claimed nodes and calculate your total daily yield.</span>
+            </li>
+            <li><code>/nd global</code> & <code>/nd local</code>
+                <span class="command-desc">Access the Global and Local server leaderboards.</span>
+            </li>
+            <li><code>/nd top_bumpers</code> 
+                <span class="command-desc">View the leaderboard of the Syndicate's elite promoters.</span>
             </li>
             <li><code>/nd vote</code> 
-                <span class="command-desc">Vote on our terminal every 24 hours to support the Syndicate and receive a financial stimulus.</span>
+                <span class="command-desc">Support the Syndicate on voting terminals for 10,000 Coins every 12 hours.</span>
+            </li>
+            <li><code>/np cancel</code> 
+                <span class="command-desc">Cancel an active PvE contract and refund your initial bet.</span>
+            </li>
+            <li><code style="color: var(--danger);">/nd wipe</code> 
+                <span class="command-desc">💀 Permanently erase your Syndicate account, balance, and ID from the databanks. Irreversible.</span>
             </li>
         </ul>
         
         <h2>📜 2. PvE Game Mode: Jury Summons (Syndicate Contracts)</h2>
-        <p>The PvE mode allows you to lease a high-yield contract from the Syndicate. The community acts as the Intergalactic Neko Jury to validate your proof of work.</p>
+        <p>The PvE mode allows you to lease a high-yield contract from the Syndicate. The community acts as the Intergalactic Neko Jury to validate your proof of work using the new secure UI buttons.</p>
         
         <div class="discord-embed">
 <span class="highlight">JURY SUMMONS:</span> <span class="accent-text">@Agent</span> has submitted proof, nya!
@@ -318,16 +323,16 @@ The Intergalactic Neko Jury must verify the proof!
 • Jury Payout Pool: 200 coins (10% of profit)
 
 <span class="highlight">JURY REQUIREMENT</span>
-• Needs: 6 votes
+• Needs: 5 votes
 
-NEKO JURY: VOTE 👍 TO VALIDATE | ❌ TO BUST
+<span style="display:inline-block; background:#2ea043; color:#fff; padding:4px 8px; border-radius:4px; margin-top:10px;">👍 Validate (0/5)</span> <span style="display:inline-block; background:#f85149; color:#fff; padding:4px 8px; border-radius:4px; margin-top:10px;">❌ Bust (0/5)</span>
         </div>
 
         <h3>Contract Mechanics & Voting Requirements</h3>
-        <p>To initiate a contract, you must stake a minimum of <strong>500 credits</strong>. You choose a multiplier ranging from <strong>x5 to x100</strong>. The chosen multiplier directly dictates the number of community reactions required.</p>
+        <p>To initiate a contract, you must stake a minimum of <strong>500 credits</strong>. You choose a multiplier ranging from <strong>x5 to x100</strong>. The chosen multiplier directly dictates the number of community button clicks required.</p>
         <ul>
-            <li><strong>The Formula:</strong> Required Votes = Multiplier + 1.</li>
-            <li><em>Note:</em> The bot's automated reaction and the contract initiator's reaction do <strong>not</strong> count toward the total. Therefore, an x5 multiplier requires exactly 6 valid community votes to pass.</li>
+            <li><strong>The New Formula:</strong> Required Votes = Multiplier. (e.g., x5 requires exactly 5 valid votes).</li>
+            <li><em>Note:</em> The initiator cannot click the buttons on their own contract. Direct participants are firewalled by the system.</li>
         </ul>
 
         <h3>Time Limits vs. Payout Scaling</h3>
@@ -344,11 +349,11 @@ NEKO JURY: VOTE 👍 TO VALIDATE | ❌ TO BUST
         </table>
 
         <div class="alert-box">
-            <strong>⚠️ ANTI-FRAUD PROTOCOL (Bust Penalty):</strong> To prevent abuse, Discord accounts under 30 days old cannot initiate or vote on PvE contracts. If the community determines your contract is spam/fake and casts more ❌ (Bust) votes than 👍 (Validate), you will be heavily penalized. Your balance will be slashed by the exact amount of your initial stake multiplied by your chosen multiplier.
+            <strong>⚠️ ANTI-FRAUD PROTOCOL (Bust Penalty):</strong> To prevent abuse, Discord accounts under 30 days old cannot initiate or vote on PvE contracts. If the community determines your contract is spam/fake and presses the ❌ (Bust) button reaching the required threshold, you will be heavily penalized. Your balance will be slashed by the exact amount of your initial stake multiplied by your chosen multiplier.
         </div>
 
         <h2>⚔️ 3. PvP Game Mode: Neko Heist (Targeted Strikes)</h2>
-        <p>Initiate a direct assault on another Syndicate member's vault. Select your target via their ID and choose your multiplier/duration tier.</p>
+        <p>Initiate a direct assault on another Syndicate member's vault. Select your target via their ID and choose your multiplier/duration tier. Participants resolve the conflict via the interactive battle buttons.</p>
 
         <div class="discord-embed">
 <span class="danger">CRITICAL ALERT: INCOMING NEKO HEIST (PvP)</span>
@@ -356,15 +361,15 @@ The Neko Syndicate has marked a high-value target for extraction!
 TARGET: <span class="accent-text">@Mark</span> | ATTACKER: <span class="accent-text">@Hunter</span>
 
 <span class="highlight">ATTACK DOSSIER</span>
-• Stake: 500 coins | Multiplier: x5 | Required: 5 votes
+• Stake: 500 coins | Multiplier: x5 
 
 <span class="highlight">DEFENSE PROTOCOL</span>
-• Vault Target: 2,500 coins | Required: 5 votes
+• Vault Target: 2,500 coins
 
-<span class="highlight">TIME TO EXTRACTION</span>
-Duration: 10 minutes
+<span class="highlight">JURY REQUIREMENT</span>
+• Needs: 5 votes to resolve.
 
-NEKO JURY: VOTE ⚔️ TO ASSIST | 🛡️ TO INTERCEPT
+<span style="display:inline-block; background:#f85149; color:#fff; padding:4px 8px; border-radius:4px; margin-top:10px;">⚔️ Assist Attack (0/5)</span> <span style="display:inline-block; background:#38bdf8; color:#000; padding:4px 8px; border-radius:4px; margin-top:10px;">🛡️ Intercept (0/5)</span>
         </div>
 
         <h3>PvP Multiplier & Time Matrix</h3>
@@ -405,42 +410,35 @@ NEKO JURY: VOTE ⚔️ TO ASSIST | 🛡️ TO INTERCEPT
             <br><em>Condition: The server must have at least 5 real human members. If the bot is ever kicked from that server, the 100,000 coins will be automatically subtracted from your balance.</em></li>
         </ul>
 
-        <h3><code>/ns advertise</code></h3>
-        <p>Purchase a dedicated advertising slot on the main Neko Syndicate support server. By spending your credits, your advertisement will be broadcasted to an exclusive ad channel for <strong>6 hours</strong>. During this window, all other channel inputs are locked, ensuring maximum visibility for your ad.</p>
-        <p><em>Rule: We accept Discord server ads and general promotions. However, promoting illegal content, scams, or phishing links will result in a permanent, irrevocable ban from the Syndicate economy.</em></p>
-<div style="font-size: 0.75rem; line-height: 1.3; font-family: 'Segoe UI', Tahoma, sans-serif; color: #D6E4F0; background-color: #0A0F1D; padding: 10px; border-radius: 5px; border: 1px solid #00E5FF; max-width: 500px; box-sizing: border-box;">
-    <div style="color: #00E5FF; font-weight: bold; font-size: 0.85rem; margin-bottom: 5px; text-transform: uppercase;">
-        
-        🔒 Privacy & Data Logs
-    </div>
+        <h3><code>/ns advertise</code> & <code>/ns advertisestop</code></h3>
+        <p>Purchase a dedicated advertising slot on the Syndicate network. For <strong>2,500 coins</strong>, your ad is broadcasted to an exclusive channel for <strong>6 hours</strong>. The system auto-renews if you have funds. Use <code>/ns advertisestop</code> to terminate the broadcast and stop auto-renewal.</p>
+        <p><em>Rule: Must include a valid link. Promoting illegal content or phishing links will result in a permanent, irrevocable ban from the Syndicate economy.</em></p>
 
-    <div style="margin: 5px 0; border-left: 2px solid #00E5FF; padding-left: 8px; background-color: rgba(0, 229, 255, 0.05);">
-        <b style="color: #00E5FF;">🚀 Disboard Bump Listener:</b><br>
-        To support bot growth on smaller servers, Neko Syndicate reads Disboard bump messages (Bot ID: <code>302050872383242240</code>). Users who successfully bump the server are automatically rewarded with economy credits.
-    </div>
+        <h3><code>/ns bumpbots_list</code> & <code>/ns toggle_bumps</code></h3>
+        <p>View the list of Syndicate-approved bump bots. Server Admins can use <code>/ns toggle_bumps</code> to globally allow or block rewards from specific bump bots within their territory.</p>
 
-    <div style="margin: 8px 0; border-left: 2px solid #00E5FF; padding-left: 8px; background-color: rgba(0, 229, 255, 0.05);">
-        <b style="color: #00E5FF;">📊 System Logging & Security:</b><br>
-        On main server channels where the bot has read access, we strictly monitor and log the following to prevent economy abuse and discover bugs:<br>
-        <span style="color: #00E5FF;">•</span> Bot joins and leaves on servers.<br>
-        <span style="color: #00E5FF;">•</span> Automated system tasks.<br>
-        <span style="color: #00E5FF;">•</span> Every economy command executed by users.<br>
-        <div style="margin-top: 4px; color: #A0B2C6; font-size: 0.7rem; font-style: italic;">
-            *Every new task generates a unique Database ID used for troubleshooting Neko Syndicate issues.
+        <h2>🚀 5. The Omni-Bump Integration (Network Expansion)</h2>
+        <div class="info-box">
+            The Syndicate rewards loyal agents who increase network visibility. When you successfully bump a server using supported bots (like Disboard), the Neko Omni-Listener detects the success and instantly injects a randomized bounty <strong>(5,000 - 10,000 Coins)</strong> into your global vault.
+            <br><br>
+            <span style="color: var(--accent);">✦</span> Use <code>/ns bumpbots_list</code> to see which bots are supported.<br>
+            <span style="color: var(--accent);">✦</span> Use <code>/nd top_bumpers</code> to view the elite promoter leaderboard.
         </div>
-    </div>
-    
-</div>
-        <h2>🛡️ 5. Minimal Data Collection (Zero Personal Data)</h2>
-        <p>We strictly collect ONLY your numeric Discord User ID and Server ID to manage your virtual balance, stats, and active bounties. We DO NOT collect, store, track, or process your username, avatar, email, or any personal information.</p>
 
-        <h2>👁️‍🗨️ 6. The "Blind Leaderboard" Privacy Feature</h2>
-        <p>This basic numeric data is required to track your progress, wins/losses, and rank on the global leaderboard. Because we strictly refuse to save your username, players from other servers will only see your identity as "@Unknown User" when using the <code>/nb global</code> command. Your real identity is 100% protected and naturally hidden by Discord, being visible only to users who already share a server with you.</p>
+        <h2>🛡️ 6. Minimal Data Collection & Zero Logs (Total Privacy)</h2>
+        <p>The Neko Syndicate operates on a strict zero-log policy regarding your personal activity. <strong>We do NOT log your messages, we do NOT log server joins/leaves, and we do NOT log the commands you use.</strong> The system has been overhauled to eliminate all tracking mechanisms.</p>
+        <p>We strictly collect ONLY your numeric Discord User ID and Server ID purely to manage your virtual game balance, your PvP/PvE win/loss stats, and active bounties. We DO NOT collect, store, track, or process your real username, avatar, email, or any personal information.</p>
 
-        <h2>🤝 7. Third Parties & Data Deletion</h2>
-        <p>We do not sell, rent, or share your data with any third parties. All data stays securely within our private database. Because we don't store personal data, your presence in our database is virtually anonymous outside of your shared servers. However, if you want your numeric data completely wiped, please contact the developer via email or use the <code>/nd cancel</code> command to clear any active tasks.</p>
+        <h2>👁️‍🗨️ 7. The "Blind Leaderboard" Feature</h2>
+        <p>This basic numeric data is required to track your progress and rank on the global leaderboard. Because we strictly refuse to save your native Discord username, players from other servers will only see your identity as "@Unknown Agent" (unless you forge a custom alias via <code>/nd name</code>) when using the <code>/nd global</code> command. Your real identity is 100% protected and naturally hidden by Discord, being visible only to users who already share a server with you.</p>
 
-        <h2>⚖️ 8. Terms of Service: Rules of the Syndicate</h2>
+        <h2>🤝 8. Complete Data Autonomy & Instant Deletion</h2>
+        <p>We do not sell, rent, or share your data with any third parties. All game statistics stay securely within our private database. Because we don't store personal data, your presence in our database is virtually anonymous.</p>
+        <div class="alert-box">
+            <strong>AUTONOMOUS DATA WIPE:</strong> You have absolute control over your existence in the Syndicate. You no longer need to contact or email the developer to have your data removed. By executing the <strong><code>/nd wipe</code></strong> command within Discord, your ID, your balance, and all your statistics are instantly and permanently erased from the databanks. This action is irreversible.
+        </div>
+
+        <h2>⚖️ 9. Terms of Service: Rules of the Syndicate</h2>
         <p>By operating within the Neko Syndicate, you agree to the following High Stakes Economy protocols:</p>
         <ul>
             <li><strong>Multi-Accounting & Fair Play:</strong> Playing with multiple accounts is permitted, but exploiting bugs, using macro scripts/auto-clickers, or manipulating the voting system with fake accounts is strictly prohibited. All game calculations have been thoroughly addressed.</li>
@@ -448,18 +446,25 @@ NEKO JURY: VOTE ⚔️ TO ASSIST | 🛡️ TO INTERCEPT
             <li><strong>Administrative Supremacy:</strong> Under certain conditions, we reserve the absolute right to permanently reset the global leaderboard and alter any economic functions, formulas, or mechanics at any time, without prior warning.</li>
         </ul>
 
-            <div style="margin-top: 10px; font-size: 0.7rem; color: #A0B2C6; text-align: justify; border-top: 1px solid rgba(0, 229, 255, 0.2); padding-top: 8px;">
-        <b style="color: #00E5FF;">⚖️ Terms of Service & Liability Waiver:</b><br>
-        By utilizing our service, you explicitly agree to the data collection practices outlined above. You acknowledge and confirm that you understand the Neko Syndicate terms and conditions. We reserve the right to modify, suspend, or overhaul the bot, its economic ecosystem, the website, and these Terms of Service at any time, without prior notice or liability. Furthermore, you agree not to engage in any legal disputes with Neko Syndicate or hold the developers liable for any damages, errors, bugs, or potential losses resulting from the use, interruption, or abusive access of our service. The bot is provided "as is" with zero assumed liability.
-    </div>
+        <div style="margin-top: 10px; font-size: 0.7rem; color: #A0B2C6; text-align: justify; border-top: 1px solid rgba(0, 229, 255, 0.2); padding-top: 8px;">
+            <b style="color: #00E5FF;">⚖️ Terms of Service & Liability Waiver:</b><br>
+            By utilizing our service, you explicitly agree to the data collection practices outlined above. You acknowledge and confirm that you understand the Neko Syndicate terms and conditions. We reserve the right to modify, suspend, or overhaul the bot, its economic ecosystem, the website, and these Terms of Service at any time, without prior notice or liability. Furthermore, you agree not to engage in any legal disputes with Neko Syndicate or hold the developers liable for any damages, errors, bugs, or potential losses resulting from the use, interruption, or abusive access of our service. The bot is provided "as is" with zero assumed liability.
+        </div>
 
         <div class="footer">
             <p><strong>Neko Syndicate — Supreme High Stakes Economy. Execute Flawlessly. 2026</strong></p>
             <div class="contact-box">
                 <p><strong>Contact & Support Protocol</strong><br>
-                For data deletion requests, bug reports, or Syndicate support, contact us at:<br>
-                <strong><a href="mailto:eudatecloud@gmail.com">eudatecloud@gmail.com</a></strong></p>
-                <p><small>Note: Please allow up to 72 hours for a response regarding data deletion requests.</small></p>
+                For bug reports, infrastructure inquiries, or Syndicate contributions, contact the Architect:</p>
+                <div style="display: flex; justify-content: center; gap: 20px; margin-top: 15px;">
+                    <a href="#" style="background: #161b22; padding: 10px 20px; border-radius: 5px; border: 1px solid #1e293b;">
+                        <span style="color: #7289da;">●</span> Discord: <strong>cristi1829</strong>
+                    </a>
+                    <a href="mailto:doublecrissmary@gmail.com" style="background: #161b22; padding: 10px 20px; border-radius: 5px; border: 1px solid #1e293b;">
+                        <span style="color: #f44336;">@</span> Email: <strong>doublecrissmary@gmail.com</strong>
+                    </a>
+                </div>
+                <p style="margin-top: 20px;"><small>Note: Complete data wipe requests should be executed autonomously via the <code>/nd wipe</code> command.</small></p>
             </div>
         </div>
     </div>
