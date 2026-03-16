@@ -251,26 +251,36 @@
         </div>
     </div>
 
-        <h2>💻 1. Core Terminal Commands</h2>
+        <h2>💻 1. Economy & Core Terminal (/nd)</h2>
         <p>Utilize these foundational commands to navigate the Syndicate's economy and track your financial trajectory:</p>
         
-        <div style="margin-bottom: 25px; background: rgba(56, 189, 248, 0.05); padding: 15px; border-radius: 8px; border: 1px dashed var(--accent); text-align: center;">
-            <span style="color: var(--text); font-weight: bold; margin-right: 10px;">🚀 Ready to deploy?</span>
-            <a href="https://discord.com/oauth2/authorize?client_id=1465301204341882940&permissions=139586784320&scope=bot%20applications.commands" 
-               style="background: var(--accent); color: #000; padding: 8px 18px; border-radius: 5px; font-weight: bold; text-transform: uppercase; font-size: 0.85em; transition: 0.3s; display: inline-block;">
-                Invite Bot Here
-            </a>
-        </div>
-        <div style="margin-bottom: 25px; background: rgba(56, 189, 248, 0.05); padding: 15px; border-radius: 8px; border: 1px dashed var(--accent); text-align: center;">
-            <span style="color: var(--text); font-weight: bold; margin-right: 10px;">💬 Need help or want to join the community?</span>
-            <a href="http://discord.gg/sxnJGQApGa" 
-               style="background: var(--accent); color: #000; padding: 8px 18px; border-radius: 5px; font-weight: bold; text-transform: uppercase; font-size: 0.85em; transition: 0.3s; display: inline-block;">
-                Join Support Server
-            </a>
-        </div>
         <ul>
             <li><code>/nd balance</code> 
                 <span class="command-desc">Inspect your global Neko vault, balance, and PvP/PvE stats.</span>
+            </li>
+            <li><code>/nd daily</code> 
+                <span class="command-desc">Claim your daily 10,000 Coins. Boost this by claiming territory!</span>
+            </li>
+            <li><code>/nd claim_node</code> & <code>/nd unclaim_node</code>
+                <span class="command-desc">Link/Unlink a server to your network to boost your daily yield by +5,000 Coins.</span>
+            </li>
+            <li><code>/nd nodes</code> 
+                <span class="command-desc">View active Syndicate sponsored nodes to claim your permanent daily boost!</span>
+            </li>
+            <li><code>/nd network</code> 
+                <span class="command-desc">View active claimed nodes and calculate your total daily yield.</span>
+            </li>
+            <li><code>/nd top</code> 
+                <span class="command-desc">🌍 View the most powerful Agents ranked globally by their coin wealth.</span>
+            </li>
+            <li><code>/nd topb</code> 
+                <span class="command-desc">🚀 View the elite Agents expanding the Syndicate's signal reach (Bumpers).</span>
+            </li>
+            <li><code>/nd topg</code> 
+                <span class="command-desc">🎁 View the most dedicated Agents by Daily Rations collected.</span>
+            </li>
+            <li><code>/nd vote</code> 
+                <span class="command-desc">Support the Syndicate on voting terminals for 10,000 Coins every 12 hours.</span>
             </li>
             <li><code>/nd rank</code> 
                 <span class="command-desc">Check your official Syndicate Rank and track your progression to the next tier.</span>
@@ -278,179 +288,87 @@
             <li><code>/nd name</code> 
                 <span class="command-desc">Forge a custom global alias for the intergalactic leaderboards (Cost: 100,000 coins).</span>
             </li>
-            <li><code>/nd daily</code> 
-                <span class="command-desc">Claim your daily 10,000 Coins. Boost this by claiming territory!</span>
-            </li>
-            <li><code>/nd claim_node</code> & <code>/nd unclaim_node</code>
-                <span class="command-desc">Link a server to your network to boost your daily yield by +5,000 Coins per active node.</span>
-            </li>
-            <li><code>/nd network</code> 
-                <span class="command-desc">View active claimed nodes and calculate your total daily yield.</span>
-            </li>
-            <li><code>/nd global</code> & <code>/nd local</code>
-                <span class="command-desc">Access the Global and Local server leaderboards.</span>
-            </li>
-            <li><code>/nd top_bumpers</code> 
-                <span class="command-desc">View the leaderboard of the Syndicate's elite promoters.</span>
-            </li>
-            <li><code>/nd vote</code> 
-                <span class="command-desc">Support the Syndicate on voting terminals for 10,000 Coins every 12 hours.</span>
-            </li>
-            <li><code>/np cancel</code> 
-                <span class="command-desc">Cancel an active PvE contract and refund your initial bet.</span>
-            </li>
             <li><code style="color: var(--danger);">/nd wipe</code> 
                 <span class="command-desc">💀 Permanently erase your Syndicate account, balance, and ID from the databanks. Irreversible.</span>
             </li>
         </ul>
-        
-        <h2>📜 2. PvE Game Mode: Jury Summons (Syndicate Contracts)</h2>
-        <p>The PvE mode allows you to lease a high-yield contract from the Syndicate. The community acts as the Intergalactic Neko Jury to validate your proof of work using the new secure UI buttons.</p>
-        
-        <div class="discord-embed">
-<span class="highlight">JURY SUMMONS:</span> <span class="accent-text">@Agent</span> has submitted proof, nya!
 
-EVIDENCE SUBMITTED (PvE)
-The Intergalactic Neko Jury must verify the proof!
+        <h2>🕹️ 2. Games & Tactical Operations (/np)</h2>
+        <p>This is where you make or break your fortune. Engage in high-stakes infiltration, community-judged contracts, or direct combat with other Agents.</p>
 
-<span class="highlight">CONTRACT DETAILS</span>
-• Stake: 500 coins
-• Multiplier: x5
-• Payout Scale: 100%
-
-<span class="highlight">PAYOUT STRUCTURE</span>
-• Agent Net Payout: 2,300 coins
-• Jury Payout Pool: 200 coins (10% of profit)
-
-<span class="highlight">JURY REQUIREMENT</span>
-• Needs: 5 votes
-
-<span style="display:inline-block; background:#2ea043; color:#fff; padding:4px 8px; border-radius:4px; margin-top:10px;">👍 Validate (0/5)</span> <span style="display:inline-block; background:#f85149; color:#fff; padding:4px 8px; border-radius:4px; margin-top:10px;">❌ Bust (0/5)</span>
+        <h3><code>/np infiltrate</code> (Hunter Missions)</h3>
+        <p>Deploy your team on a high-stakes infiltration to bypass security sectors! You must navigate through a series of doors to reach the target vault.</p>
+        <div class="info-box">
+            <strong>How to play:</strong> Choose a mission tier (Rookie to Elite) and stake your entry fee. You will be presented with interactive directional buttons (UP, DOWN, LEFT, RIGHT). You must guess the correct path through each security sector. 
+            <br><br>
+            If you choose the wrong door, the alarm triggers and you lose a life (Attempt), resetting you to Sector 1. If you run out of lives, you are KIA and lose your bet. If you successfully bypass all sectors, you extract massive rewards (up to 1,500,000 Coins)!
         </div>
 
-        <h3>Contract Mechanics & Voting Requirements</h3>
-        <p>To initiate a contract, you must stake a minimum of <strong>500 credits</strong>. You choose a multiplier ranging from <strong>x5 to x100</strong>. The chosen multiplier directly dictates the number of community button clicks required.</p>
+        <h3><code>/np contract</code> (PvE: Jury Summons)</h3>
+        <p>Start a solo contract and submit proof for the community to validate. The community acts as the Intergalactic Neko Jury to validate your proof of work using secure UI buttons.</p>
         <ul>
-            <li><strong>The New Formula:</strong> Required Votes = Multiplier. (e.g., x5 requires exactly 5 valid votes).</li>
-            <li><em>Note:</em> The initiator cannot click the buttons on their own contract. Direct participants are firewalled by the system.</li>
+            <li><strong>Requirements:</strong> Choose a multiplier (x5 to x100) and a time limit. The multiplier dictates how many <strong>👍 Validate</strong> votes you need.</li>
+            <li><strong>Payouts:</strong> Longer time limits decrease your profit percentage. If validated, 10% of the profit goes to the Jury.</li>
+            <li><strong>Penalties:</strong> If the Jury busts you (❌), you will be heavily fined up to the full required vault amount.</li>
         </ul>
 
-        <h3>Time Limits vs. Payout Scaling</h3>
-        <p>When creating a contract, you must select a time limit. Longer durations make it easier to gather the required votes, but they heavily penalize your final payout percentage. If your contract is validated, <strong>10% of the profit is distributed equally among the jurors who voted.</strong></p>
+        <h3><code>/np raid</code> (PvP: Targeted Strikes)</h3>
+        <p>Launch a tactical raid against another Agent's vault! You select the target and stake your coins. The community decides the outcome by voting to <strong>⚔️ Assist Attack</strong> or <strong>🛡️ Intercept</strong>.</p>
+        <ul>
+            <li><strong>LETHAL:</strong> Attackers meet the required votes. The Hunter loots the FULL bounty!</li>
+            <li><strong>GUERRILLA:</strong> Time expires, but Attack outnumbers Defense. The Hunter extracts 20% of the Mark's stash.</li>
+            <li><strong>INTERCEPTED:</strong> Defense wins or ties. The Mark SURVIVES and confiscates the Hunter's initial bet.</li>
+        </ul>
+
+        <h3><code>/np rps</code> & <code>/np rps_config</code> (Tactical Duel)</h3>
+        <p>Challenge an Agent to a 10-minute tactical Rock-Paper-Scissors duel! Use <code>/np rps_config</code> to permanently set your custom Rock/Paper/Scissors probability weights for 10,000 coins.</p>
+
+        <h3><code>/np roulette</code></h3>
+        <p>Bet on a lucky number from 1 to 10. If the wheel lands on your number, you instantly win <strong>8x</strong> your initial stake!</p>
+
+        <h3><code>/np cancel</code></h3>
+        <p>Abort your active PvE contract and refund your initial bet. (Cannot be used to escape an active PvP raid!).</p>
+
+        <h2>🤖 3. Network, Ads & Stats (/ns)</h2>
         
-        <table>
-            <tr><th>Time Limit</th><th>Payout Reward</th></tr>
-            <tr><td>30 Minutes</td><td>100% of chosen multiplier</td></tr>
-            <tr><td>1 Hour</td><td>50% of chosen multiplier</td></tr>
-            <tr><td>3 Hours</td><td>16% of chosen multiplier</td></tr>
-            <tr><td>6 Hours</td><td>8% of chosen multiplier</td></tr>
-            <tr><td>12 Hours</td><td>4% of chosen multiplier</td></tr>
-            <tr><td>24 Hours</td><td>2% of chosen multiplier</td></tr>
-        </table>
-
-        <div class="alert-box">
-            <strong>⚠️ ANTI-FRAUD PROTOCOL (Bust Penalty):</strong> To prevent abuse, Discord accounts under 30 days old cannot initiate or vote on PvE contracts. If the community determines your contract is spam/fake and presses the ❌ (Bust) button reaching the required threshold, you will be heavily penalized. Your balance will be slashed by the exact amount of your initial stake multiplied by your chosen multiplier.
-        </div>
-
-        <h2>⚔️ 3. PvP Game Mode: Neko Heist (Targeted Strikes)</h2>
-        <p>Initiate a direct assault on another Syndicate member's vault. Select your target via their ID and choose your multiplier/duration tier. Participants resolve the conflict via the interactive battle buttons.</p>
-
-        <div class="discord-embed">
-<span class="danger">CRITICAL ALERT: INCOMING NEKO HEIST (PvP)</span>
-The Neko Syndicate has marked a high-value target for extraction! 
-TARGET: <span class="accent-text">@Mark</span> | ATTACKER: <span class="accent-text">@Hunter</span>
-
-<span class="highlight">ATTACK DOSSIER</span>
-• Stake: 500 coins | Multiplier: x5 
-
-<span class="highlight">DEFENSE PROTOCOL</span>
-• Vault Target: 2,500 coins
-
-<span class="highlight">JURY REQUIREMENT</span>
-• Needs: 5 votes to resolve.
-
-<span style="display:inline-block; background:#f85149; color:#fff; padding:4px 8px; border-radius:4px; margin-top:10px;">⚔️ Assist Attack (0/5)</span> <span style="display:inline-block; background:#38bdf8; color:#000; padding:4px 8px; border-radius:4px; margin-top:10px;">🛡️ Intercept (0/5)</span>
-        </div>
-
-        <h3>PvP Multiplier & Time Matrix</h3>
-        <ul>
-            <li><strong>x5 Multiplier:</strong> Requires 5 votes within <strong>10 minutes</strong>.</li>
-            <li><strong>x10 Multiplier:</strong> Requires 10 votes within <strong>30 minutes</strong>.</li>
-            <li><strong>x25 Multiplier:</strong> Requires 25 votes within <strong>1 hour</strong>.</li>
-            <li><strong>x50 Multiplier:</strong> Requires 50 votes within <strong>3 hours</strong>.</li>
-            <li><strong>x100 Multiplier:</strong> Requires 100 votes within <strong>6 hours</strong>.</li>
-        </ul>
-
-        <h3>Rules of Engagement (Payout Logic)</h3>
-        <p>In every Neko Heist, <strong>10% of the stakes are split equally</strong> among all hired guns (voters). The outcome of the heist is decided as follows:</p>
-        <ul>
-            <li><strong>LETHAL (Hit required ⚔️):</strong> The Hunter successfully gathers the required attack votes. The Hunter loots the FULL bounty!</li>
-            <li><strong>GUERRILLA (Time out with ⚔️ majority):</strong> Time expires before the required votes are hit, but Attack votes outnumber Defense votes. The Hunter extracts 20% of the Mark's ENTIRE stash.</li>
-            <li><strong>INTERCEPTED (Tie or hit required 🛡️):</strong> Defense votes meet the requirement, or the vote ends in a tie. The Mark SURVIVES and strictly CONFISCATES the Hunter's initial bet!</li>
-        </ul>
-
-        <h2>🎁 4. Syndicate Utility Commands (/ns)</h2>
+        <h3><code>/ns advertise</code> & <code>/ns advertisestop</code></h3>
+        <p>Purchase a dedicated advertising slot on the Syndicate network. For <strong>50 coins</strong>, your ad is broadcasted to an exclusive channel for <strong>6 hours</strong>. The system auto-renews. Use <code>/ns advertisestop</code> to terminate.</p>
         
         <h3><code>/ns giveaway</code></h3>
-        <p>Host a community giveaway funded by the Syndicate's taxation system.</p>
-        <ul>
-            <li><strong>Amount:</strong> Minimum 500 credits.</li>
-            <li><strong>Duration:</strong> Must be entered in strict <em>seconds</em>. (e.g., 60 = 1 min, 300 = 5 mins, 600 = 10 mins, 1800 = 30 mins, 3600 = 1 hour, 86400 = 24 hours). <em>Tip: Use an online minutes-to-seconds converter for custom times.</em></li>
-            <li><strong>Reactions:</strong> Minimum number of participants required to trigger the payout (min 1).</li>
-            <li><strong>Message:</strong> Custom text describing what you are giving away.</li>
-        </ul>
-        <div class="info-box">
-            <strong>Taxation Mechanic:</strong> To fund the giveaway, random server members will be incrementally taxed between 2% and 10% of their balance until the giveaway amount is reached. To prevent abuse, giveaways shorter than 5 minutes have a strict cap of <strong>2,500 coins</strong>.
-        </div>
+        <p>Host a community giveaway funded by the Syndicate's taxation system. Random server members will be incrementally taxed between 2% and 10% to fund the prize pool.</p>
 
-        <h3><code>/ns stats</code> & <code>/ns invite</code></h3>
-        <ul>
-            <li><code>/ns stats</code>: Displays the total number of members across all servers and the total active server count hosting the bot.</li>
-            <li><code>/ns invite</code>: Generates the bot invite link. If you invite the bot to a server where you have "Manage Server" permissions, follow up with <code>/ns claim</code> to receive a <strong>100,000 coin bounty</strong>. 
-            <br><em>Condition: The server must have at least 5 real human members. If the bot is ever kicked from that server, the 100,000 coins will be automatically subtracted from your balance.</em></li>
-        </ul>
+        <h3><code>/ns invite</code> & <code>/ns claim</code></h3>
+        <p>Generate a 24h invite link. If you invite the bot to a server where you have "Manage Server" permissions, use <code>/ns claim</code> to receive a <strong>100,000 coin bounty</strong>. (Requires 5 human members).</p>
 
-        <h3><code>/ns advertise</code> & <code>/ns advertisestop</code></h3>
-        <p>Purchase a dedicated advertising slot on the Syndicate network. For <strong>2,500 coins</strong>, your ad is broadcasted to an exclusive channel for <strong>6 hours</strong>. The system auto-renews if you have funds. Use <code>/ns advertisestop</code> to terminate the broadcast and stop auto-renewal.</p>
-        <p><em>Rule: Must include a valid link. Promoting illegal content or phishing links will result in a permanent, irrevocable ban from the Syndicate economy.</em></p>
+        <h3><code>/ns stats</code></h3>
+        <p>View the global statistics of the Neko Syndicate network.</p>
 
         <h3><code>/ns bumpbots_list</code> & <code>/ns toggle_bumps</code></h3>
-        <p>View the list of Syndicate-approved bump bots. Server Admins can use <code>/ns toggle_bumps</code> to globally allow or block rewards from specific bump bots within their territory.</p>
+        <p>View Syndicate-approved bump bots. Server Admins can toggle global rewards for specific bump bots within their territory.</p>
 
-        <h2>🚀 5. The Omni-Bump Integration (Network Expansion)</h2>
+        <h2>👁️‍🗨️ 4. Global Alias & Privacy Protection (IMPORTANT)</h2>
+        <p>
+            The Syndicate prioritizes your privacy while maintaining a competitive environment. <strong>When you execute a command and enter the economy, you are automatically registered in our database.</strong> 
+        </p>
         <div class="info-box">
-            The Syndicate rewards loyal agents who increase network visibility. When you successfully bump a server using supported bots (like Disboard), the Neko Omni-Listener detects the success and instantly injects a randomized bounty <strong>(5,000 - 10,000 Coins)</strong> into your global vault.
-            <br><br>
-            <span style="color: var(--accent);">✦</span> Use <code>/ns bumpbots_list</code> to see which bots are supported.<br>
-            <span style="color: var(--accent);">✦</span> Use <code>/nd top_bumpers</code> to view the elite promoter leaderboard.
+            <strong>The exact personal data we collect is:</strong><br>
+            <span style="color: var(--accent);">✦</span> Your Discord User ID.<br>
+            <span style="color: var(--accent);">✦</span> Your Discord Username (or your custom alias via <code>/nd name</code>).<br>
+            <span style="color: var(--accent);">✦</span> Your game statistics (balance, wins, fails, dailies collected).
         </div>
-
-<h2>👁️‍🗨️ 6/7. Global Alias & Privacy Protection</h2>
-<p>
-    The Syndicate prioritizes your privacy while maintaining a competitive environment. The only personal data we store is your unique <strong>Discord User ID</strong> and your <strong>Global Syndicate Username</strong>. 
-</p>
-<p>
-    This basic numeric data is required to track your progress and rank on the global leaderboard. Because we strictly refuse to save your native Discord username, players from other servers will only see your identity as <strong>"@Unknown Agent"</strong> when using the <code>/nd global</code> command. Your real identity is 100% protected and naturally hidden by Discord, being visible only to users who already share a server with you.
-</p>
-<p>
-    You have the power to forge your own identity by creating a custom alias via the <code>/nd name</code> command. This global username can be changed at any time to suit your operational needs. 
-</p>
-<div class="alert-box">
-    <strong>💀 SYSTEM OVERRIDE:</strong> If you do not agree with the storage of your ID or alias, you may execute the <code>/nd wipe</code> command at any time. This will permanently and irreversibly erase your entire existence, balance, and statistics from the Syndicate databanks without the need for manual email requests.
-</div>
-
-        <h2>🤝 8. Complete Data Autonomy & Instant Deletion</h2>
-        <p>We do not sell, rent, or share your data with any third parties. All game statistics stay securely within our private database. Because we don't store personal data, your presence in our database is virtually anonymous.</p>
+        <p>
+            This basic numeric data is required to track your progress and rank on the global leaderboard. Players from other servers will only see your identity as <strong>"@Unknown Agent"</strong> when using global commands unless you purchase a custom alias.
+        </p>
         <div class="alert-box">
-            <strong>AUTONOMOUS DATA WIPE:</strong> You have absolute control over your existence in the Syndicate. You no longer need to contact or email the developer to have your data removed. By executing the <strong><code>/nd wipe</code></strong> command within Discord, your ID, your balance, and all your statistics are instantly and permanently erased from the databanks. This action is irreversible.
+            <strong>💀 AUTONOMOUS DATA WIPE:</strong> If you do not agree with the storage of your ID or alias, or simply wish to leave the game, you can opt-out at any time. By executing the <strong><code>/nd wipe</code></strong> command within Discord, your ID, your balance, your username, and all your statistics are instantly and permanently erased from the databanks without needing to send an email request. This action is irreversible.
         </div>
 
-        <h2>⚖️ 9. Terms of Service: Rules of the Syndicate</h2>
-        <p>By operating within the Neko Syndicate, you agree to the following High Stakes Economy protocols:</p>
+        <h2>⚖️ 5. Terms of Service: Rules of the Syndicate</h2>
+        <p>By operating within the Neko Syndicate, you agree to the following protocols:</p>
         <ul>
-            <li><strong>Multi-Accounting & Fair Play:</strong> Playing with multiple accounts is permitted, but exploiting bugs, using macro scripts/auto-clickers, or manipulating the voting system with fake accounts is strictly prohibited. All game calculations have been thoroughly addressed.</li>
+            <li><strong>Multi-Accounting & Fair Play:</strong> Playing with multiple accounts is permitted, but exploiting bugs, using macro scripts/auto-clickers, or manipulating the voting system with fake accounts is strictly prohibited.</li>
             <li><strong>Private Channels:</strong> If you attempt to manipulate the system by farming infinite credits in isolated, private channels, note that no one will accept your heavily inflated currency.</li>
-            <li><strong>Administrative Supremacy:</strong> Under certain conditions, we reserve the absolute right to permanently reset the global leaderboard and alter any economic functions, formulas, or mechanics at any time, without prior warning.</li>
+            <li><strong>Administrative Supremacy:</strong> We reserve the absolute right to permanently reset the global leaderboard and alter any economic functions, formulas, or mechanics at any time, without prior warning.</li>
         </ul>
 
         <div style="margin-top: 10px; font-size: 0.7rem; color: #A0B2C6; text-align: justify; border-top: 1px solid rgba(0, 229, 255, 0.2); padding-top: 8px;">
@@ -460,6 +378,8 @@ TARGET: <span class="accent-text">@Mark</span> | ATTACKER: <span class="accent-t
 
         <div class="footer">
             <p><strong>Neko Syndicate — Supreme High Stakes Economy. Execute Flawlessly. 2026</strong></p>
+            <p style="color: var(--accent); font-weight: bold; margin-bottom: 25px;">This document was last updated on Monday, March 16, 2026</p>
+            
             <div class="contact-box">
                 <p><strong>Contact & Support Protocol</strong><br>
                 For bug reports, infrastructure inquiries, or Syndicate contributions, contact the Architect:</p>
@@ -471,7 +391,7 @@ TARGET: <span class="accent-text">@Mark</span> | ATTACKER: <span class="accent-t
                         <span style="color: #f44336;">@</span> Email: <strong>doublecrissmary@gmail.com</strong>
                     </a>
                 </div>
-                <p style="margin-top: 20px;"><small>Note: Complete data wipe requests should be executed autonomously via the <code>/nd wipe</code> command.</small></p>
+                <p style="margin-top: 20px;"><small>Note: Complete data wipe requests should be executed autonomously via the <code>/nd wipe</code> command. Only email if the terminal is completely offline.</small></p>
             </div>
         </div>
     </div>
